@@ -125,7 +125,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
-		<Item Name="toggleSwitch.vi" Type="VI" URL="../../../../../Documents/FRC Github/trunk/ModBot-2001/Driver Station/toggleSwitch.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -285,6 +284,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Manage Connection List.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Manage Connection List.vi"/>
 				<Item Name="Manage Dirty Field ID List.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Manage Dirty Field ID List.vi"/>
 				<Item Name="NetComm_AllianceStation.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_AllianceStation.ctl"/>
+				<Item Name="NetComm_CAN_Receive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_CAN_Receive.vi"/>
 				<Item Name="NetComm_CAN_Send.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_CAN_Send.vi"/>
 				<Item Name="NetComm_ControlWord.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_ControlWord.ctl"/>
 				<Item Name="NetComm_getAllianceStation.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_getAllianceStation.vi"/>
@@ -484,6 +484,27 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_CAN_PCMMessageIDs.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/PCM/WPI_CAN_PCMMessageIDs.ctl"/>
 				<Item Name="WPI_CAN_PCMSend.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/PCM/WPI_CAN_PCMSend.vi"/>
 				<Item Name="WPI_CANTalonSRX_APIControlMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_APIControlMode.ctl"/>
+				<Item Name="WPI_CANTalonSRX_BrakeOverride.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_BrakeOverride.ctl"/>
+				<Item Name="WPI_CANTalonSRX_ControlMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_ControlMode.ctl"/>
+				<Item Name="WPI_CANTalonSRX_DeduceControlIMsgId.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_DeduceControlIMsgId.vi"/>
+				<Item Name="WPI_CANTalonSRX_Disable.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_Disable.vi"/>
+				<Item Name="WPI_CANTalonSRX_Enable.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_Enable.vi"/>
+				<Item Name="WPI_CANTalonSRX_FeedbackSelect.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_FeedbackSelect.ctl"/>
+				<Item Name="WPI_CANTalonSRX_GetOutput.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_GetOutput.vi"/>
+				<Item Name="WPI_CANTalonSRX_Global.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_Global.vi"/>
+				<Item Name="WPI_CANTalonSRX_GlobalControl.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_GlobalControl.ctl"/>
+				<Item Name="WPI_CANTalonSRX_GlobalOps.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_GlobalOps.ctl"/>
+				<Item Name="WPI_CANTalonSRX_GlobalStatus.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_GlobalStatus.ctl"/>
+				<Item Name="WPI_CANTalonSRX_MessageIDs.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_MessageIDs.ctl"/>
+				<Item Name="WPI_CANTalonSRX_MotionProfileTrajectoryPt.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_MotionProfileTrajectoryPt.ctl"/>
+				<Item Name="WPI_CANTalonSRX_Open.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_Open.vi"/>
+				<Item Name="WPI_CANTalonSRX_Params.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_Params.ctl"/>
+				<Item Name="WPI_CANTalonSRX_Receive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_Receive.vi"/>
+				<Item Name="WPI_CANTalonSRX_ScaleUnits.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_ScaleUnits.vi"/>
+				<Item Name="WPI_CANTalonSRX_Send.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_Send.vi"/>
+				<Item Name="WPI_CANTalonSRX_SetOutput.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_SetOutput.vi"/>
+				<Item Name="WPI_CANTalonSRX_SetParameter.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_SetParameter.vi"/>
+				<Item Name="WPI_CANTalonSRX_SetSensorPosition.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/CanMotor/TalonSRX/WPI_CANTalonSRX_SetSensorPosition.vi"/>
 				<Item Name="WPI_CompressorDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Compressor/WPI_CompressorDevRef.ctl"/>
 				<Item Name="WPI_CompressorOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Compressor/WPI_CompressorOpen.vi"/>
 				<Item Name="WPI_CompressorStart.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Compressor/WPI_CompressorStart.vi"/>
@@ -735,7 +756,7 @@ AddOutputFilter chunkFilter
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Init CAN.vi" Type="VI" URL="/E/LabVIEW/Init CAN.vi"/>
+			<Item Name="Init CAN.vi" Type="VI" URL="../Init CAN.vi"/>
 			<Item Name="libc.so.6" Type="Document" URL="libc.so.6">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -751,7 +772,8 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Single Talon.ctl" Type="VI" URL="/E/LabVIEW/Single Talon.ctl"/>
+			<Item Name="Single Talon.ctl" Type="VI" URL="../Single Talon.ctl"/>
+			<Item Name="toggleSwitch.vi" Type="VI" URL="../toggleSwitch.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
