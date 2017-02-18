@@ -1,5 +1,9 @@
 [My Computer]
+<<<<<<< .mine
+My Computer = "127.0.0.1"
+=======
 My Computer = "10.0.47.153"
+>>>>>>> .r96
 
 [Target]
 Target = "roboRIO-4418-FRC.local"
